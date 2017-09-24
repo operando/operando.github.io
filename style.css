@@ -1,4 +1,28 @@
 #test {
     font-size: 50px;
-    color: rgb(105, 186, 218)    
+    color: rgb(105, 186, 218);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    background: rgb(105, 218, 194);
+}
+
+.content {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.footer {
+    grid-column: 1;
+    grid-row: 3;
+    background: rgb(192, 160, 223);
 }
